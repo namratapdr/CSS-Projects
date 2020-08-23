@@ -1,0 +1,84 @@
+/*#2374C6, #C20F00, #FFDD22, #FFFFFF, #000000*/
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+body {
+    height: 95vh;
+    width: 99%;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*{
+    box-sizing: border-box;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+    width: 300px;
+    height: 300px;
+}
+.grid-container::before{
+    font-family: 'Alata', sans-serif;
+    font-size: 100px;
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    color:#c20f00;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+    animation: changeLetter 3.3s linear forwards ;
+}
+@keyframes changeLetter {
+    0% {
+      content: "1";
+    }
+    25% {
+        content: "2";
+    }
+    50% {
+      
+    }
+    75% {
+        content: "3";
+    }
+    100%{
+        content: "go!";
+    }
+  }
+  
+.row{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 0px;
+}
+.container {
+    width: 150px;
+    height: 150px;
+    background: #ffdd22;
+}
+.four{
+    animation: load 1s forwards;
+}
+.three{
+    animation: load 1s forwards;
+    animation-delay: 2.7s;
+}
+.two{
+    animation: load 1s forwards;
+    animation-delay: .9s;
+}
+.one{
+    animation: load 1s forwards;
+    animation-delay: 1.8s;
+}
+@keyframes load {
+    0%{
+        background: #ffffff;;
+    }
+    100% {
+        background: #000000;
+    }
+}
