@@ -1,0 +1,22 @@
+<svg width="264" height="169" viewBox="0 0 264 169" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame" clip-path="url(#clip0)">
+<g id="Target">
+<path id="Vector" d="M80.48 99.87C86.754 99.87 91.84 94.784 91.84 88.51C91.84 82.236 86.754 77.15 80.48 77.15C74.206 77.15 69.12 82.236 69.12 88.51C69.12 94.784 74.206 99.87 80.48 99.87Z" fill="#D34040"/>
+<path id="Vector_2" d="M80.48 115.47C65.62 115.47 53.53 103.38 53.53 88.52C53.53 73.66 65.62 61.57 80.48 61.57C95.34 61.57 107.43 73.66 107.43 88.52C107.43 103.37 95.34 115.47 80.48 115.47Z" stroke="white" stroke-width="30" stroke-miterlimit="10"/>
+<path id="Vector_3" d="M80.48 128.22C102.411 128.22 120.19 110.441 120.19 88.51C120.19 66.5788 102.411 48.8 80.48 48.8C58.5488 48.8 40.77 66.5788 40.77 88.51C40.77 110.441 58.5488 128.22 80.48 128.22Z" stroke="#D34040" stroke-width="25" stroke-miterlimit="10"/>
+<path id="Vector_4" d="M80.48 142.39C110.237 142.39 134.36 118.267 134.36 88.51C134.36 58.7529 110.237 34.63 80.48 34.63C50.7229 34.63 26.6 58.7529 26.6 88.51C26.6 118.267 50.7229 142.39 80.48 142.39Z" stroke="white" stroke-width="25" stroke-miterlimit="10"/>
+<path id="Vector_5" d="M80.48 156.56C118.063 156.56 148.53 126.093 148.53 88.51C148.53 50.927 118.063 20.46 80.48 20.46C42.897 20.46 12.43 50.927 12.43 88.51C12.43 126.093 42.897 156.56 80.48 156.56Z" stroke="#D34040" stroke-width="19" stroke-miterlimit="10"/>
+<path id="Vector_6" d="M80.48 166.49C123.547 166.49 158.46 131.577 158.46 88.51C158.46 45.4428 123.547 10.53 80.48 10.53C37.4128 10.53 2.5 45.4428 2.5 88.51C2.5 131.577 37.4128 166.49 80.48 166.49Z" stroke="white" stroke-width="5" stroke-miterlimit="10"/>
+</g>
+<g id="Arrow ">
+<path id="Vector_7" d="M164.48 56.35L258.1 7.19C259.56 6.43 261.36 6.99 262.12 8.44C262.88 9.9 262.32 11.7 260.87 12.46L167.25 61.62C165.93 62.32 164.29 61.92 163.43 60.7C162.39 59.23 162.88 57.18 164.48 56.35Z" fill="#C1814C" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_8" d="M251.03 1L241.12 6.2C236.85 8.44 235.21 13.71 237.45 17.98L255.08 8.72L251.03 1Z" fill="#AF5F23" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_9" d="M251.83 26.6L261.74 21.4L257.68 13.68L240.05 22.94C242.3 27.2 247.57 28.84 251.83 26.6Z" fill="#AF5F23" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="263.46" height="168.99" fill="white"/>
+</clipPath>
+</defs>
+</svg>

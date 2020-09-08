@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lofi Retro</title>
+</head>
+<body>
+    <div class="cassette">
+        <p>Tap to play</p>
+    <div class="rectangle "> 
+        <div class="inner-rectangle">
+            <div class="title">
+                <p>Lofi Mixtape</p>
+            </div>
+            <div class="title">
+                <h2>B</h2>
+            </div>
+            <div class="ribon-container">
+                <div class="box">
+                    <div class="tape-wheel">
+                        <div class="teethBox ">
+                            <div class="teeth">
+                            
+                            </div>
+                            <div class="teeth">
+                            
+                            </div>
+                            <div class="teeth">
+                            
+                            </div>
+                            <div class="teeth">
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tape">
+                        <div class="tape-ribbon "></div>
+                        <div class="tape-ribbon-two "></div>
+                    </div>
+                    <div class="tape-wheel">
+                        <div class="teethBox ">
+                            <div class="teeth">
+                            
+                            </div>
+                            <div class="teeth">
+                            
+                            </div>
+                            <div class="teeth">
+                            
+                            </div>
+                            <div class="teeth">
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cassette-body">
+            <div class="squares">
+
+            </div>
+            <div class="squares two">
+                
+            </div>
+        </div>
+       
+    </div>
+    </div>
+    <audio id="player" autoplay loop>
+        <source  id="player" src="https://namratapdrjs.netlify.app/lofi-music.mp3" type="audio/mpeg">
+    </audio>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+         var audElem= document.getElementsByTagName('audio')[0].getAttribute('id');
+         $(".cassette").click(function(){
+            song(Lofi);
+            });
+        var Lofi = document.getElementById(audElem);
+            function song(a){
+            $(".teethBox").addClass("playing")
+            $(".tape-ribbon").addClass("play")
+            $(".tape-ribbon-two").addClass("play-two")
+        //start playing at 0
+            a.play();
+            }
+
+       
+
+    </script>
+</body>
+</html>
