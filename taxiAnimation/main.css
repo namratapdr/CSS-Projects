@@ -1,0 +1,368 @@
+  html,body{
+            margin: 0;
+            height: 100%;
+        }
+        body{
+            background: rgb(190,221,234);
+            
+        }
+        .light-mode {
+            background: rgb(190,221,234);
+        }
+        .dark-mode {
+            background: #0B0D21;
+        }
+        .container{
+            
+            position: relative;
+            display: grid;
+            place-items: center;
+            top: 8rem;
+        }
+        .slider-container {
+            display: grid;
+            place-items: center;
+            width: 90%;
+            height: 50px;
+            
+        }
+        .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        }
+
+        /* Hide default HTML checkbox */
+        .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        }
+
+        /* The slider */
+        .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        border: 1px solid  rgb(179, 176, 176);
+        
+        -webkit-transition: 1.5s;
+        transition: 1.5s;
+        animation-name: colorChange2 ;
+            animation-duration: 2s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes colorChange2 {
+            from {background-color: hsl(228, 22%, 36%);}
+            to {background-color: #fff;box-shadow: 3px  3px 5px grey;}
+        }
+
+        .slider .front::before {
+        position: absolute;
+        content: " 💡 ";
+        display: flex;
+        justify-content: center; /* align horizontal */
+        align-items: center;
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: #f2f5f9;
+        -webkit-transition: 1.5s;
+        transition: 1.5s;
+        }
+        .slider .front::before {
+           -webkit-animation: rotate-center 1s ease-in-out 0s both;
+	        animation: rotate-center 1s ease-in-out 0s both;
+        }
+      
+            @keyframes rotate-center {
+            0% {
+                -webkit-transform: rotate(0);
+                        transform: rotate(0);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                        transform: rotate(360deg);
+            }
+            }
+
+        input:checked + .slider {
+            animation-name: colorChange ;
+            animation-duration: 2s;
+            animation-delay: .5s;
+            animation-fill-mode: both;
+        }
+        @keyframes colorChange {
+            from {background-color: #fff;}
+            to {background-color: #2B3044;}
+        }
+        input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+        }
+        input:checked + .slider .front::before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+         content: '🌙';
+         background-color: black;
+         
+            display: flex;
+            justify-content: center; /* align horizontal */
+            align-items: center;
+            animation-name: spin ;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes spin {
+           
+            0% {transform: rotate(180deg);
+                
+                }
+            50% {
+                transform: scale(1.2);
+            }
+            
+        }
+        
+        /* Rounded sliders */
+        .slider.round {
+        border-radius: 34px;
+        }
+
+        .slider.round .front::before {
+        border-radius: 50%;
+        }
+        #text {
+            position: relative;
+            top: 2.5rem;
+        }
+         .light-mode {
+            
+             animation-name: lightmode;
+             animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+        .dark-mode {
+             animation-name: darkmode;
+             animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+        .light-mode {
+            animation-name: lightmode;
+             animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes lightmode {
+            from {
+                
+                 background: #0B0D21;
+                 color: white;
+            }
+            to {
+               background: rgb(190,221,234);
+                color: black;
+            }
+           
+        }
+        @keyframes darkmode {
+            from {
+                background: rgb(190,221,234);
+                color: black;
+            }
+            to {
+                 background: #0B0D21;
+                 color: white;
+            }
+        }
+        .light {
+            background: linear-gradient(38deg, rgba(190,221,234,1) 41%, rgba(93,194,234,1) 65%);
+        }
+        .dark{
+            background: linear-gradient(38deg, rgba(32,38,97,1) 45%, rgba(11,13,33,1) 100%);
+        }
+        .scene-container{
+           
+            
+            position: relative;
+            width: clamp(220px, 50%, 550px);
+            height: 300px;
+            border: 2px solid black;
+            border-radius: 1rem;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .taxi {
+            position:relative;
+            top: 150px;  
+            left:-300px;
+             width:200px;
+             height: 100px;
+            /* background-color: #F6BA02;*/
+            animation: move 4s infinite linear;
+
+        }
+        @keyframes move {
+            0% {
+                transform: translateX(700px ) ;
+            }
+        }
+        @media (max-width: 600px){
+            @keyframes move {
+            0% {
+                transform: translateX(500px ) ;
+            }
+        }
+        }
+        #hood {
+            position: relative;
+            top: 7px;
+            left: 22px;
+            width: 110px;
+            height: 40px;
+             border-top-left-radius: 4.5rem;  
+             border-top-right-radius: 5rem; 
+            border: 1px solid gray;
+            border-bottom: 0;
+            z-index: 1;
+            background-color: #F6BA02;
+        }
+        #windows{
+            position: relative;
+            top:12px;
+            left: 14px;
+            width: 80px;
+            height: 25px;
+            border-top-left-radius: 4.5rem;  
+             border-top-right-radius: 4.5rem; 
+            border: 1px solid gray;
+            background: linear-gradient(38deg, rgba(190,221,234,1) 20%, rgba(255,255,255,1) 65%);;
+        }
+        #divider{
+            position: relative;
+            content: '';
+            top:0px;
+            left: 2.3rem;
+            width: 5px;
+            height: 25px;
+             background-color: #F6BA02;
+             border-left:  1px solid gray;
+             border-right:1px solid gray ;
+        }
+        #body {
+            position: relative;
+            top: 0px;
+            width: 150px;
+            height: 40px;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+            border: 1px solid gray;
+           
+            
+            background-color: #F6BA02;
+        }
+        #body-hood{
+            position: absolute;
+            top:28px;
+            width: 158px;
+            height: 12px;
+            left: -7px;
+            border: 1px solid gray;
+           border-top: 0;
+           border-radius:0 5px 0 5px;
+            background-color: #F6BA02;
+            z-index: 1;
+        }
+        #stripe{
+            background-color: #173B5F;
+            position: relative;
+            width: 150px;
+            top: 1rem;
+            height: 5px;
+             border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+        }
+        .ground{
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            border-top: 1px solid black ;
+            background-color: rgb(77, 10, 10);
+            animation: ground-move 3s infinite linear alternate;
+        }
+        @keyframes ground-move {
+            0% {
+                background: rgb(87,38,13);
+                background: linear-gradient(38deg, rgba(87,38,13,1) 76%, rgba(106,66,23,1) 83%);
+            }
+            25%{
+                background: rgb(87,38,13);
+                background: linear-gradient(38deg, rgba(87,38,13,1) 56%, rgba(106,66,23,1) 73%);
+            }
+            50%{
+                background: rgb(87,38,13);
+                background: linear-gradient(38deg, rgba(87,38,13,1) 36%, rgba(106,66,23,1) 63%);
+            }
+            100% {
+                background: rgb(87,38,13);
+                background: linear-gradient(38deg, rgba(87,38,13,1) 16%, rgba(106,66,23,1) 43%);
+            }
+            
+        }
+        .wheels{
+            box-sizing: border-box;
+            position: relative;
+            top: -13px;
+            border: 7px solid black;
+            border-radius: 50%;
+            background-color: silver;
+            width:30px;
+             height:30px;
+             z-index: 1;
+              animation: wheel 1s infinite linear;
+        }
+        @keyframes wheel
+        {
+            from
+            {
+                transform: rotate(0deg);
+            }
+            to
+            {
+                transform: rotate(360deg);
+            }
+        }
+        .back-wheel{
+            left: 10px;
+        }
+        .front-wheel{
+            box-sizing: border-box;
+            position: absolute;
+            top: 71px;
+            left:110px;
+        }
+        .cross{
+            position: relative;
+            top: -2px;
+            left: -2px;
+        }
+        
+        .rise{
+            width: 100px;
+            height:100px;
+            background: url(sun.svg);
+            animation:down 2s  linear forwards;
+        }
+        @keyframes down {
+            0%{
+                transform: translateY(-100px);
+            }
+        }
